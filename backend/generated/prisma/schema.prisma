@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Categoria {
+  id        Int        @id @default(autoincrement())
+  nombre    String     @unique
+  productos Producto[]
+}
+
+model Producto {
+  id          Int      @id @default(autoincrement())
+  titulo      String
+  descripcion String?
+  precio      Float    @default(0.0)
+  disponible  Boolean  @default(true)
+  creadoEn    DateTime @default(now())
+
+  categoriaId Int
+  categoria   Categoria @relation(fields: [categoriaId], references: [id], onDelete: Cascade)
+}

@@ -1,0 +1,29 @@
+:root { font-family: system-ui, sans-serif; color: #222; background: white; line-height: 1.5; }
+body { margin: 0; }
+main { max-width: 600px; margin: 0 auto; padding: 2rem; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.25rem; }
+hr { border: 0; border-top: 1px solid #ddd; margin: 1.5rem 0; }
+#formulario-producto { background-color: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; }
+label { display: block; margin-bottom: .5rem; font-weight: bold; }
+input, textarea, select { width: 100%; padding: .5rem; box-sizing: border-box; margin-bottom: 1rem; font: inherit; }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+button { background: #007bff; color: white; padding: .6rem 1rem; border: 0; border-radius: 4px; cursor: pointer; font: inherit; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+button.secundario, button.peligro { background: #eee; color: #222; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #0056b3; outline-offset: 2px; }
+.acciones { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.sesion .acciones input { flex-basis: 100%; }
+.checkbox { display: flex; align-items: center; gap: .5rem; margin-bottom: 1rem; }
+.checkbox input { width: auto; margin: 0; }
+.filtros { margin-top: 1rem; }
+.lista-productos { padding: 0; list-style: none; }
+.tarjeta { padding: 1rem 0; border-bottom: 1px solid #eee; }
+.tarjeta h3 { display: inline; margin: 0; font-size: 1rem; }
+.precio { margin-left: .5rem; }
+.categoria, .ayuda, .resumen { color: #666; }
+.estado { font-size: .9rem; }
+.aviso { padding: 1rem; border-radius: 4px; margin: 1rem 0; }
+.error { background: #ffebee; color: #c62828; }
+.exito { background: #edf7ed; color: #236b2b; }
+.solo-lectores { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
